@@ -8,7 +8,6 @@ class PlaylistGenerator:
         self.__playlist = self.generate_playlist()
 
     def generate_playlist(self) -> list:
-
         response = requests.get(self.__end_point)
         soup = BeautifulSoup(response.text, "html.parser")
 
